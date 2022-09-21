@@ -8,7 +8,7 @@ output "vnet_name" {
   description = "Name of the Azure vnet."
 }
 
-output "subnet_names" {
-  value = azurerm_subnet.subnet[*].name
-  description = "Subnet names."
+output "subnet_ids" {
+  value = azurerm_subnet.subnet[*].id
+  description = "Subnet IDs."
 }
